@@ -1,16 +1,24 @@
 #include "pch.h"
 #include "Cryo/Core/Engine.h"
+#include "../core/Application.h" 
+#include "../core/Log.h"
 
 namespace Cryo
 {
     bool Init()
     {
-        OutputDebugStringA("[Cryo] Init()\n");
+        LogInfo("Engine Init()");
         return true;
     }
 
     void Shutdown()
     {
-        OutputDebugStringA("[Cryo] Shutdown()\n");
+        LogInfo("Engine Shutdown()");
+    }
+
+    void Run()
+    {
+        Application app;
+        app.Run();
     }
 }

@@ -63,6 +63,9 @@
     <ClCompile Include="src\engine\core\Log.cpp">
       <Filter>Engine\Source\Core\Core</Filter>
     </ClCompile>
+    <ClCompile Include="src\engine\core\Application.cpp">
+      <Filter>Engine\Source\Core\Core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\engine\include\framework.h">
@@ -78,6 +81,9 @@
       <Filter>Engine\Include\Cryo</Filter>
     </ClInclude>
     <ClInclude Include="src\engine\include\Cryo\Core\Engine.h">
+      <Filter>Engine\Include\Cryo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\core\Application.h">
       <Filter>Engine\Include\Cryo</Filter>
     </ClInclude>
   </ItemGroup>
