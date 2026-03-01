@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CryoEngine/CryoEngine.vcxproj" Id="aac61a7c-5f9f-47b0-bdc1-0f41aac87279" />
+  <Project Path="Sandbox/Sandbox.vcxproj" Id="d0610f2b-d315-410f-99fe-fd6ccb31e9fb" />
+  <Project Path="Tools/Tools.vcxproj" Id="5384802b-771c-4597-ace1-9f1e42bf4056" />
+</Solution>

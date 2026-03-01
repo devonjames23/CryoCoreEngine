@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{6be4d869-0589-49e9-98c1-279fe474038e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{b6822827-d3a6-4bad-a85a-02f933c94ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Debug">
+      <UniqueIdentifier>{f74343df-c589-4667-ac18-5fc48f9ed542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Include">
+      <UniqueIdentifier>{5ae5fafc-dba4-4cca-a446-386566fda1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Input">
+      <UniqueIdentifier>{4993a3da-423d-4018-9962-873b73ac26b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Math">
+      <UniqueIdentifier>{4b276128-7867-4b66-bfd7-583148b2d947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Platform">
+      <UniqueIdentifier>{37c0d678-0206-448b-988c-5753ce990bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resources">
+      <UniqueIdentifier>{32531a3d-f7a4-47f6-ba0f-5100f6f14985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene">
+      <UniqueIdentifier>{9bf165b8-44a9-451c-8db7-159203131255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Shaders">
+      <UniqueIdentifier>{3d157150-0b05-44a0-9103-839543e90b94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source">
+      <UniqueIdentifier>{9a725b74-6c71-4ec2-9f00-1db05707ba0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Include\Cryo">
+      <UniqueIdentifier>{ef447b74-37df-49ca-bed5-7e020cf9ac18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core">
+      <UniqueIdentifier>{1e6a2e2b-32bc-43d7-b6ed-6dc309157dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Platform\win32">
+      <UniqueIdentifier>{e41dca30-3c7d-4907-88ea-023670b6f8bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source\Core\Core">
+      <UniqueIdentifier>{15753fe9-8118-465a-b5d5-47f3cb3aa361}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\engine\source\CryoEngine.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\source\pch.cpp">
+      <Filter>Engine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\source\Core\Engine.cpp">
+      <Filter>Engine\Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\platform\platform.cpp">
+      <Filter>Engine\Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\engine\core\Log.cpp">
+      <Filter>Engine\Source\Core\Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\engine\include\framework.h">
+      <Filter>Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\include\pch.h">
+      <Filter>Engine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\platform\platform.h">
+      <Filter>Engine\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\core\Log.h">
+      <Filter>Engine\Include\Cryo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\engine\include\Cryo\Core\Engine.h">
+      <Filter>Engine\Include\Cryo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
