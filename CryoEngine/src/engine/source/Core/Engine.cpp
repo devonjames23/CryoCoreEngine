@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "Cryo/Core/Engine.h"
-#include "../core/Application.h" 
-#include "../core/Log.h"
+#include "Cryo/Core/Application.h"
+#include "Cryo/Core/Log.h"
 
 namespace Cryo
 {

@@ -19,22 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\engine\core\Application.cpp" />
-    <ClCompile Include="src\engine\core\Log.cpp" />
     <ClCompile Include="src\engine\platform\platform.cpp" />
+    <ClCompile Include="src\engine\source\Core\Application.cpp" />
     <ClCompile Include="src\engine\source\Core\Engine.cpp" />
+    <ClCompile Include="src\engine\source\Core\Log.cpp" />
     <ClCompile Include="src\engine\source\CryoEngine.cpp" />
     <ClCompile Include="src\engine\source\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\engine\core\Application.h" />
-    <ClInclude Include="src\engine\core\Log.h" />
+    <ClInclude Include="src\engine\include\Cryo\Core\Application.h" />
     <ClInclude Include="src\engine\include\Cryo\Core\Engine.h" />
+    <ClInclude Include="src\engine\include\Cryo\Core\Log.h" />
+    <ClInclude Include="src\engine\include\Cryo\Platform\platform.h" />
     <ClInclude Include="src\engine\include\framework.h" />
     <ClInclude Include="src\engine\include\pch.h" />
-    <ClInclude Include="src\engine\platform\platform.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
@@ -132,7 +132,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)CryoEngine\src\engine\include</AdditionalIncludeDirectories>
-      <AdditionalUsingDirectories>$(ProjectDir)src\engine</AdditionalUsingDirectories>
+      <AdditionalUsingDirectories>$(ProjectDir)src\engine\include</AdditionalUsingDirectories>
     </ClCompile>
     <Link>
       <SubSystem>

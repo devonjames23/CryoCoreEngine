@@ -1,15 +1,14 @@
-#ifndef PCH_H
-#define PCH_H
+#pragma once
 
-// Windows
-#include <Windows.h>
-
-// Standard library
-#include <iostream>
-#include <memory>
-#include <string>
-#include <vector>
-
+#include <cstdint>
 #include <cstdio>
+#include <cstdlib>
+#include <cstring>
 
-#endif // PCH_H
+#include <string>
+#include <memory>
+#include <vector>
+#include <array>
+
+#include <chrono>
+#include <thread>

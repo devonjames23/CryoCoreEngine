@@ -1,6 +1,6 @@
 #include "pch.h"
-#include "Log.h"
-#include "../platform/Platform.h"
+#include "Cryo/Core/Log.h"          // comes from include root
+#include "Cryo/Platform/Platform.h"
 #include <cstdio>
 
 namespace Cryo
@@ -20,12 +20,20 @@ namespace Cryo
     void Log(LogLevel level, const char* message)
     {
         char buffer[1024];
-        std::snprintf(buffer, sizeof(buffer), "[Cryo][%s] %s\n", LevelToString(level), message);
+
+        std::snprintf(
+            buffer,
+            sizeof(buffer),
+            "[Cryo][%s] %s\n",
+            LevelToString(level),
+            message
+        );
+
         Platform::DebugOutput(buffer);
     }
 
     void LogTrace(const char* message) { Log(LogLevel::Trace, message); }
-    void LogInfo(const char* message) { Log(LogLevel::Info, message); }
-    void LogWarn(const char* message) { Log(LogLevel::Warn, message); }
+    void LogInfo (const char* message) { Log(LogLevel::Info,  message); }
+    void LogWarn (const char* message) { Log(LogLevel::Warn,  message); }
     void LogError(const char* message) { Log(LogLevel::Error, message); }
 }
